@@ -1,0 +1,50 @@
+{
+  "name": "socialgpt",
+  "version": "1.0.0",
+  "description": "autonomous social media manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && react-scripts start",
+    "server": "nodemon server/app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signalboxanalytics/socialgpt.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "automation",
+    "LinkedIn",
+    "Twitter",
+    "ChatGPT"
+  ],
+  "author": "Kent Johansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/signalboxanalytics/socialgpt/issues"
+  },
+  "homepage": "https://github.com/signalboxanalytics/socialgpt#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.12.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
